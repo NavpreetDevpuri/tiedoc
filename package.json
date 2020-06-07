@@ -1,0 +1,22 @@
+{
+  "name": "tiedoc",
+  "version": "1.0.0",
+  "description": "a visual programming for making games",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavpreetDevpuri/tIedoC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NavpreetDevpuri/tIedoC/issues"
+  },
+  "homepage": "https://github.com/NavpreetDevpuri/tIedoC#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
