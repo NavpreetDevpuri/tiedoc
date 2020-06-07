@@ -2,36 +2,35 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./data/tiedoc/css/index.css"/>
+        <link rel="shortcut icon" href="#" />
         <title>tIedoC</title>
-        <script src="data/blockly/libs/blockly_compressed.js"></script>
-        <script src="data/blockly/libs/blocks_compressed.js"></script>
-        <script src="data/blockly/libs/javascript_compressed.js"></script>
-        <script src="data/blockly/libs/en.js"></script>
-        <script src="data/blockly/libs/require.js"></script>
-        <script src="data/js/tiedoc.js"></script>
-        <style>
-            html, body {
-                height: 100%;
-                margin: 0;
-            }
-            body {
-                background-color: #fff;
-                font-family: sans-serif;
-                overflow: hidden;
-            }
-            #blocklyArea {
-                height: 100%;
-                width: 100%;
-            }
-            #blocklyArea {
-                height: 100%;
-                width: 100%;
-            }
-        </style>
+        
+        <script src="data/blockly/libs/js/blockly_compressed.js"></script>
+        <script src="data/blockly/libs/js/blocks_compressed.js"></script>
+        <script src="data/blockly/libs/js/javascript_compressed.js"></script>
+        <script src="data/blockly/libs/js/en.js"></script>
+        <script src="data/tiedoc/js/setup_blockly.js"></script>
     </head>
     <body>
+        <div id="top-bar">
+
+        </div>
         <div id="blocklyArea"></div>
         <div id="blocklyDiv" style="position: absolute"></div>
-        <xml id="toolbox"></xml>
+        <div id="right-block">
+            <div id="canvas-block">
+                <canvas id="main-canvas"></canvas>
+            </div>
+            <div id="right-down-block">
+                <div id="sprits-block">
+
+                </div>
+                <div id="scenes-block">
+
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>

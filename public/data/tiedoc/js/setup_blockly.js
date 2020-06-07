@@ -43,11 +43,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
         Blockly.svgResize(workspace);
     };
-    var toolbox_outerHTML = readStringFromFileAtPath("data/blockly/libs/toolbox.xml");
-    document.getElementById("toolbox").outerHTML = toolbox_outerHTML;
+    var toolbox_outerHTML = readStringFromFileAtPath("data/blockly/libs/xml/toolbox.xml");
+    var toolbox_xml = Blockly.Xml.textToDom(toolbox_outerHTML)
     workspace = Blockly.inject('blocklyDiv',
                                {media: 'data/blockly/media/',
-                                toolbox: document.getElementById('toolbox'),
+                                toolbox: toolbox_xml,
                                 zoom:
                                 {controls: true,
                                  wheel: true,
