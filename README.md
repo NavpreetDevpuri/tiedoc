@@ -24,4 +24,4 @@ project folder.
 1.  Make a <b>new copy of the shortcut of Chrome</b> and rename it, (for example: 'chrome with file access').
 2.  Next right click your newly created icon and select <b>'properties'</b>.
 3.  Find the <b>'target'</b> box and add <b>--allow-file-access-from-files</b> to the end of it.  It should now look similar to this  "C:Program Files (x86)\Google\Chrome\Application\chrome.exe" <b>--allow-file-access-from-files</b>.
-4. Now open Chrome from that shortcut then simply open <b>public/index.html</b> to that chrome window.
+4. Now first close Chrome completely then open Chrome from that shortcut then simply open <b>public/index.html</b> to that chrome window.
