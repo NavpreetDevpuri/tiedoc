@@ -1,4 +1,4 @@
-![tiedoc_splash_screen](https://raw.githubusercontent.com/NavpreetDevpuri/tIedoC/master/logo/tiedoc_logo_landscape_splash_screen.gif)
+![tiedoc_splash_screen](https://raw.githubusercontent.com/NavpreetDevpuri/tIedoC/master/public/data/logo/tiedoc_logo_landscape_splash_screen.gif)
 # tIedoC
 A visual programming language for making games. A combination of Phaser, Babylon.js, Blockly, Scratch and Catrobat
 
