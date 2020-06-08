@@ -5,15 +5,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    <link rel="stylesheet" href="data/jQuery/jquery-ui.css">
+    <link rel="stylesheet" href="data/Bootstrap/bootstrap.min.css"
         crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    <script src="data/jQuery/jquery.min.js"></script>
+    <script src="data/jQuery/jquery-ui.min.js"></script>
+    <script src="data/Bootstrap/popper.min.js" crossorigin="anonymous"></script>
+    <script src="data/Bootstrap/bootstrap.min.js"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/blockly@3.20200402.1/blockly.min.js"></script>
+    <script src="data/Blockly/libs/blockly.min.js"></script>
     <title>tIedoC</title>
     <link rel="stylesheet" type="text/css" href="./data/tiedoc/css/index.css" />
     <style>
@@ -169,6 +169,7 @@
 
         Blockly.Blocks['a'] = {
             init: function () {
+                //console.log("yesss");
                 this.appendValueInput("a1")
                     .setCheck(null)
                     .appendField(new Blockly.FieldDropdown([["aaa", "0"], ["b", "1"], ["c", "2"]]), "a2");
@@ -211,7 +212,6 @@
             });
 
         var onresize = function () {
-            console.log("resizing");
             blocklyDiv.style.width = blocklyArea.offsetWidth + 'px';
             blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
             Blockly.svgResize(workspace);

@@ -27,30 +27,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
         return code;
     };
     var onresize = function(e) {
-        // Compute the absolute coordinates and dimensions of blocklyArea.
-        var element = blocklyArea;
-        var x = 0;
-        var y = 0;
-        do {
-            x += element.offsetLeft;
-            y += element.offsetTop;
-            element = element.offsetParent;
-        } while (element);
-        // Position blocklyDiv over blocklyArea.
-        blocklyDiv.style.left = x + 'px';
-        blocklyDiv.style.top = y + 'px';
         blocklyDiv.style.width = blocklyArea.offsetWidth + 'px';
         blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
         Blockly.svgResize(workspace);
     };
-    var toolbox_outerHTML = readStringFromFileAtPath("data/blockly/libs/xml/toolbox.xml");
+    var toolbox_outerHTML = readStringFromFileAtPath("data/tIedoC/xml/toolbox.xml");
     var toolbox_xml = Blockly.Xml.textToDom(toolbox_outerHTML)
     workspace = Blockly.inject('blocklyDiv',
                                {media: 'data/blockly/media/',
                                 toolbox: toolbox_xml,
                                 zoom:
                                 {controls: true,
-                                 wheel: true,
+                                 wheel: false,
                                  startScale: 1.0,
                                  maxScale: 3,
                                  minScale: 0.3,
@@ -61,7 +49,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                                  colour: '#ccc',
                                  snap: true},
                                 trashcan: true});
-    window.addEventListener('resize', onresize, false);
+    window.addEventListener('resize', onresize, true);
     onresize();
     Blockly.svgResize(workspace);
 });
